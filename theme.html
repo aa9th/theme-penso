@@ -66,12 +66,14 @@
         <div class="website-content" role="main">
             <div class="content">
             
-            This is the home page
-
 
             {% if is_home or is_tag %}
-
                 {% if is_tag %}
+
+                {% if tag == 'page_home' }
+                    found page_home
+                {% endif }
+
                 <header>
                     <h2 class="title">Showing all posts tagged #{{ tag }}:</h2>
                 </header>
