@@ -52,7 +52,7 @@
                     <ul class="nav nav-pills nav-home pull-left">
                         {% if pages %}
                           {% for page in pages %}
-                            {% if 'page_home' in page.tags %}
+                            {% if 'home' in page.tags %}
                                 YES!
                             {% else %}
                                 NO! {{ page.tags }}
