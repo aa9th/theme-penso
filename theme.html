@@ -56,12 +56,10 @@
                           {% for page in pages %}
                             {% if 'home' in page.tags %}
                             <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
+                            <!-- tags: "{{ page.tags }}" -->
+                            {% else %}
+                            <!-- tags: "{{ page.tags }}" -->
                             {% endif %}
-
-                            {% if 'onHome' in page.tags %}
-                            <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
-                            {% endif %}
-
                           {% endfor %}
                         {% endif %}
                     </ul>
