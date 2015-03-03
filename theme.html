@@ -58,6 +58,7 @@
                             {% if 'home' in page.tags %}
                             <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>
                             {% else %}
+                            <li><a href="{{ page.permalink }}" class="{{ set_active(page.permalink) }}">{{ page.title }}</a></li>                            
                             {% endif %}
                           {% endfor %}
                         {% endif %}
